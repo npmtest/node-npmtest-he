@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-he/he/he.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-he/node_modules/he/he.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-he">npmtest-he (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-he/he/he.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-he/node_modules/he/he.js</span></h1>
     <h2>
         
         Statements: <span class="metric">25.64% <small>(40 / 156)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> » <a href="index.html">node-npmtest-he/he/</a> » he.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-he/node_modules/he/</a> &#187; he.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -911,7 +913,7 @@
 	// Detect free variable `global`, from Node.js or Browserified code,
 	// and use it as `root`.
 	var freeGlobal = typeof global == 'object' &amp;&amp; global;
-	<span class="missing-if-branch" title="else path not taken">E</span>if (freeGlobal.global === freeGlobal || <span class="branch-1 cbranch-no" title="branch not covered">freeGlobal.window === freeGlobal)</span> {
+	<span class="missing-if-branch" title="else path not taken" >E</span>if (freeGlobal.global === freeGlobal || <span class="branch-1 cbranch-no" title="branch not covered" >freeGlobal.window === freeGlobal)</span> {
 		root = freeGlobal;
 	}
 &nbsp;
@@ -963,152 +965,152 @@
 &nbsp;
 	var object = {};
 	var hasOwnProperty = object.hasOwnProperty;
-	var has = <span class="fstat-no" title="function not covered">function(object, propertyName) {</span>
-<span class="cstat-no" title="statement not covered">		return hasOwnProperty.call(object, propertyName);</span>
+	var has = <span class="fstat-no" title="function not covered" >function(object, propertyName) {</span>
+<span class="cstat-no" title="statement not covered" >		return hasOwnProperty.call(object, propertyName);</span>
 	};
 &nbsp;
-	var contains = <span class="fstat-no" title="function not covered">function(array, value) {</span>
-<span class="cstat-no" title="statement not covered">		var index = -1;</span>
-<span class="cstat-no" title="statement not covered">		var length = array.length;</span>
-<span class="cstat-no" title="statement not covered">		while (++index &lt; length) {</span>
-<span class="cstat-no" title="statement not covered">			if (array[index] == value) {</span>
-<span class="cstat-no" title="statement not covered">				return true;</span>
+	var contains = <span class="fstat-no" title="function not covered" >function(array, value) {</span>
+<span class="cstat-no" title="statement not covered" >		var index = -1;</span>
+<span class="cstat-no" title="statement not covered" >		var length = array.length;</span>
+<span class="cstat-no" title="statement not covered" >		while (++index &lt; length) {</span>
+<span class="cstat-no" title="statement not covered" >			if (array[index] == value) {</span>
+<span class="cstat-no" title="statement not covered" >				return true;</span>
 			}
 		}
-<span class="cstat-no" title="statement not covered">		return false;</span>
+<span class="cstat-no" title="statement not covered" >		return false;</span>
 	};
 &nbsp;
-	var merge = <span class="fstat-no" title="function not covered">function(options, defaults) {</span>
-<span class="cstat-no" title="statement not covered">		if (!options) {</span>
-<span class="cstat-no" title="statement not covered">			return defaults;</span>
+	var merge = <span class="fstat-no" title="function not covered" >function(options, defaults) {</span>
+<span class="cstat-no" title="statement not covered" >		if (!options) {</span>
+<span class="cstat-no" title="statement not covered" >			return defaults;</span>
 		}
-<span class="cstat-no" title="statement not covered">		var result = {};</span>
-<span class="cstat-no" title="statement not covered">		var key;</span>
-<span class="cstat-no" title="statement not covered">		for (key in defaults) {</span>
+<span class="cstat-no" title="statement not covered" >		var result = {};</span>
+<span class="cstat-no" title="statement not covered" >		var key;</span>
+<span class="cstat-no" title="statement not covered" >		for (key in defaults) {</span>
 			// A `hasOwnProperty` check is not needed here, since only recognized
 			// option names are used anyway. Any others are ignored.
-<span class="cstat-no" title="statement not covered">			result[key] = has(options, key) ? options[key] : defaults[key];</span>
+<span class="cstat-no" title="statement not covered" >			result[key] = has(options, key) ? options[key] : defaults[key];</span>
 		}
-<span class="cstat-no" title="statement not covered">		return result;</span>
+<span class="cstat-no" title="statement not covered" >		return result;</span>
 	};
 &nbsp;
 	// Modified version of `ucs2encode`; see https://mths.be/punycode.
-	var codePointToSymbol = <span class="fstat-no" title="function not covered">function(codePoint, strict) {</span>
-<span class="cstat-no" title="statement not covered">		var output = '';</span>
-<span class="cstat-no" title="statement not covered">		if ((codePoint &gt;= 0xD800 &amp;&amp; codePoint &lt;= 0xDFFF) || codePoint &gt; 0x10FFFF) {</span>
+	var codePointToSymbol = <span class="fstat-no" title="function not covered" >function(codePoint, strict) {</span>
+<span class="cstat-no" title="statement not covered" >		var output = '';</span>
+<span class="cstat-no" title="statement not covered" >		if ((codePoint &gt;= 0xD800 &amp;&amp; codePoint &lt;= 0xDFFF) || codePoint &gt; 0x10FFFF) {</span>
 			// See issue #4:
 			// “Otherwise, if the number is in the range 0xD800 to 0xDFFF or is
 			// greater than 0x10FFFF, then this is a parse error. Return a U+FFFD
 			// REPLACEMENT CHARACTER.”
-<span class="cstat-no" title="statement not covered">			if (strict) {</span>
-<span class="cstat-no" title="statement not covered">				parseError('character reference outside the permissible Unicode range');</span>
+<span class="cstat-no" title="statement not covered" >			if (strict) {</span>
+<span class="cstat-no" title="statement not covered" >				parseError('character reference outside the permissible Unicode range');</span>
 			}
-<span class="cstat-no" title="statement not covered">			return '\uFFFD';</span>
+<span class="cstat-no" title="statement not covered" >			return '\uFFFD';</span>
 		}
-<span class="cstat-no" title="statement not covered">		if (has(decodeMapNumeric, codePoint)) {</span>
-<span class="cstat-no" title="statement not covered">			if (strict) {</span>
-<span class="cstat-no" title="statement not covered">				parseError('disallowed character reference');</span>
+<span class="cstat-no" title="statement not covered" >		if (has(decodeMapNumeric, codePoint)) {</span>
+<span class="cstat-no" title="statement not covered" >			if (strict) {</span>
+<span class="cstat-no" title="statement not covered" >				parseError('disallowed character reference');</span>
 			}
-<span class="cstat-no" title="statement not covered">			return decodeMapNumeric[codePoint];</span>
+<span class="cstat-no" title="statement not covered" >			return decodeMapNumeric[codePoint];</span>
 		}
-<span class="cstat-no" title="statement not covered">		if (strict &amp;&amp; contains(invalidReferenceCodePoints, codePoint)) {</span>
-<span class="cstat-no" title="statement not covered">			parseError('disallowed character reference');</span>
+<span class="cstat-no" title="statement not covered" >		if (strict &amp;&amp; contains(invalidReferenceCodePoints, codePoint)) {</span>
+<span class="cstat-no" title="statement not covered" >			parseError('disallowed character reference');</span>
 		}
-<span class="cstat-no" title="statement not covered">		if (codePoint &gt; 0xFFFF) {</span>
-<span class="cstat-no" title="statement not covered">			codePoint -= 0x10000;</span>
-<span class="cstat-no" title="statement not covered">			output += stringFromCharCode(codePoint &gt;&gt;&gt; 10 &amp; 0x3FF | 0xD800);</span>
-<span class="cstat-no" title="statement not covered">			codePoint = 0xDC00 | codePoint &amp; 0x3FF;</span>
+<span class="cstat-no" title="statement not covered" >		if (codePoint &gt; 0xFFFF) {</span>
+<span class="cstat-no" title="statement not covered" >			codePoint -= 0x10000;</span>
+<span class="cstat-no" title="statement not covered" >			output += stringFromCharCode(codePoint &gt;&gt;&gt; 10 &amp; 0x3FF | 0xD800);</span>
+<span class="cstat-no" title="statement not covered" >			codePoint = 0xDC00 | codePoint &amp; 0x3FF;</span>
 		}
-<span class="cstat-no" title="statement not covered">		output += stringFromCharCode(codePoint);</span>
-<span class="cstat-no" title="statement not covered">		return output;</span>
+<span class="cstat-no" title="statement not covered" >		output += stringFromCharCode(codePoint);</span>
+<span class="cstat-no" title="statement not covered" >		return output;</span>
 	};
 &nbsp;
-	var hexEscape = <span class="fstat-no" title="function not covered">function(codePoint) {</span>
-<span class="cstat-no" title="statement not covered">		return '&amp;#x' + codePoint.toString(16).toUpperCase() + ';';</span>
+	var hexEscape = <span class="fstat-no" title="function not covered" >function(codePoint) {</span>
+<span class="cstat-no" title="statement not covered" >		return '&amp;#x' + codePoint.toString(16).toUpperCase() + ';';</span>
 	};
 &nbsp;
-	var decEscape = <span class="fstat-no" title="function not covered">function(codePoint) {</span>
-<span class="cstat-no" title="statement not covered">		return '&amp;#' + codePoint + ';';</span>
+	var decEscape = <span class="fstat-no" title="function not covered" >function(codePoint) {</span>
+<span class="cstat-no" title="statement not covered" >		return '&amp;#' + codePoint + ';';</span>
 	};
 &nbsp;
-	var parseError = <span class="fstat-no" title="function not covered">function(message) {</span>
-<span class="cstat-no" title="statement not covered">		throw Error('Parse error: ' + message);</span>
+	var parseError = <span class="fstat-no" title="function not covered" >function(message) {</span>
+<span class="cstat-no" title="statement not covered" >		throw Error('Parse error: ' + message);</span>
 	};
 &nbsp;
 	/*--------------------------------------------------------------------------*/
 &nbsp;
-	var encode = <span class="fstat-no" title="function not covered">function(string, options) {</span>
-<span class="cstat-no" title="statement not covered">		options = merge(options, encode.options);</span>
-<span class="cstat-no" title="statement not covered">		var strict = options.strict;</span>
-<span class="cstat-no" title="statement not covered">		if (strict &amp;&amp; regexInvalidRawCodePoint.test(string)) {</span>
-<span class="cstat-no" title="statement not covered">			parseError('forbidden code point');</span>
+	var encode = <span class="fstat-no" title="function not covered" >function(string, options) {</span>
+<span class="cstat-no" title="statement not covered" >		options = merge(options, encode.options);</span>
+<span class="cstat-no" title="statement not covered" >		var strict = options.strict;</span>
+<span class="cstat-no" title="statement not covered" >		if (strict &amp;&amp; regexInvalidRawCodePoint.test(string)) {</span>
+<span class="cstat-no" title="statement not covered" >			parseError('forbidden code point');</span>
 		}
-<span class="cstat-no" title="statement not covered">		var encodeEverything = options.encodeEverything;</span>
-<span class="cstat-no" title="statement not covered">		var useNamedReferences = options.useNamedReferences;</span>
-<span class="cstat-no" title="statement not covered">		var allowUnsafeSymbols = options.allowUnsafeSymbols;</span>
-<span class="cstat-no" title="statement not covered">		var escapeCodePoint = options.decimal ? decEscape : hexEscape;</span>
+<span class="cstat-no" title="statement not covered" >		var encodeEverything = options.encodeEverything;</span>
+<span class="cstat-no" title="statement not covered" >		var useNamedReferences = options.useNamedReferences;</span>
+<span class="cstat-no" title="statement not covered" >		var allowUnsafeSymbols = options.allowUnsafeSymbols;</span>
+<span class="cstat-no" title="statement not covered" >		var escapeCodePoint = options.decimal ? decEscape : hexEscape;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">		var escapeBmpSymbol = <span class="fstat-no" title="function not covered">function(symbol) {</span></span>
-<span class="cstat-no" title="statement not covered">			return escapeCodePoint(symbol.charCodeAt(0));</span>
+<span class="cstat-no" title="statement not covered" >		var escapeBmpSymbol = <span class="fstat-no" title="function not covered" >function(symbol) {</span></span>
+<span class="cstat-no" title="statement not covered" >			return escapeCodePoint(symbol.charCodeAt(0));</span>
 		};
 &nbsp;
-<span class="cstat-no" title="statement not covered">		if (encodeEverything) {</span>
+<span class="cstat-no" title="statement not covered" >		if (encodeEverything) {</span>
 			// Encode ASCII symbols.
-<span class="cstat-no" title="statement not covered">			string = string.replace(regexAsciiWhitelist, <span class="fstat-no" title="function not covered">function(symbol) {</span></span>
+<span class="cstat-no" title="statement not covered" >			string = string.replace(regexAsciiWhitelist, <span class="fstat-no" title="function not covered" >function(symbol) {</span></span>
 				// Use named references if requested &amp; possible.
-<span class="cstat-no" title="statement not covered">				if (useNamedReferences &amp;&amp; has(encodeMap, symbol)) {</span>
-<span class="cstat-no" title="statement not covered">					return '&amp;' + encodeMap[symbol] + ';';</span>
+<span class="cstat-no" title="statement not covered" >				if (useNamedReferences &amp;&amp; has(encodeMap, symbol)) {</span>
+<span class="cstat-no" title="statement not covered" >					return '&amp;' + encodeMap[symbol] + ';';</span>
 				}
-<span class="cstat-no" title="statement not covered">				return escapeBmpSymbol(symbol);</span>
+<span class="cstat-no" title="statement not covered" >				return escapeBmpSymbol(symbol);</span>
 			});
 			// Shorten a few escapes that represent two symbols, of which at least one
 			// is within the ASCII range.
-<span class="cstat-no" title="statement not covered">			if (useNamedReferences) {</span>
-<span class="cstat-no" title="statement not covered">				string = string</span>
+<span class="cstat-no" title="statement not covered" >			if (useNamedReferences) {</span>
+<span class="cstat-no" title="statement not covered" >				string = string</span>
 					.replace(/&amp;gt;\u20D2/g, '&amp;nvgt;')
 					.replace(/&amp;lt;\u20D2/g, '&amp;nvlt;')
 					.replace(/&amp;#x66;&amp;#x6A;/g, '&amp;fjlig;');
 			}
 			// Encode non-ASCII symbols.
-<span class="cstat-no" title="statement not covered">			if (useNamedReferences) {</span>
+<span class="cstat-no" title="statement not covered" >			if (useNamedReferences) {</span>
 				// Encode non-ASCII symbols that can be replaced with a named reference.
-<span class="cstat-no" title="statement not covered">				string = string.replace(regexEncodeNonAscii, <span class="fstat-no" title="function not covered">function(string) {</span></span>
+<span class="cstat-no" title="statement not covered" >				string = string.replace(regexEncodeNonAscii, <span class="fstat-no" title="function not covered" >function(string) {</span></span>
 					// Note: there is no need to check `has(encodeMap, string)` here.
-<span class="cstat-no" title="statement not covered">					return '&amp;' + encodeMap[string] + ';';</span>
+<span class="cstat-no" title="statement not covered" >					return '&amp;' + encodeMap[string] + ';';</span>
 				});
 			}
 			// Note: any remaining non-ASCII symbols are handled outside of the `if`.
-		} else <span class="cstat-no" title="statement not covered">if (useNamedReferences) {</span>
+		} else <span class="cstat-no" title="statement not covered" >if (useNamedReferences) {</span>
 			// Apply named character references.
 			// Encode `&lt;&gt;"'&amp;` using named character references.
-<span class="cstat-no" title="statement not covered">			if (!allowUnsafeSymbols) {</span>
-<span class="cstat-no" title="statement not covered">				string = string.replace(regexEscape, <span class="fstat-no" title="function not covered">function(string) {</span></span>
-<span class="cstat-no" title="statement not covered">					return '&amp;' + encodeMap[string] + ';'; </span>// no need to check `has()` here
+<span class="cstat-no" title="statement not covered" >			if (!allowUnsafeSymbols) {</span>
+<span class="cstat-no" title="statement not covered" >				string = string.replace(regexEscape, <span class="fstat-no" title="function not covered" >function(string) {</span></span>
+<span class="cstat-no" title="statement not covered" >					return '&amp;' + encodeMap[string] + ';'; </span>// no need to check `has()` here
 				});
 			}
 			// Shorten escapes that represent two symbols, of which at least one is
 			// `&lt;&gt;"'&amp;`.
-<span class="cstat-no" title="statement not covered">			string = string</span>
+<span class="cstat-no" title="statement not covered" >			string = string</span>
 				.replace(/&amp;gt;\u20D2/g, '&amp;nvgt;')
 				.replace(/&amp;lt;\u20D2/g, '&amp;nvlt;');
 			// Encode non-ASCII symbols that can be replaced with a named reference.
-<span class="cstat-no" title="statement not covered">			string = string.replace(regexEncodeNonAscii, <span class="fstat-no" title="function not covered">function(string) {</span></span>
+<span class="cstat-no" title="statement not covered" >			string = string.replace(regexEncodeNonAscii, <span class="fstat-no" title="function not covered" >function(string) {</span></span>
 				// Note: there is no need to check `has(encodeMap, string)` here.
-<span class="cstat-no" title="statement not covered">				return '&amp;' + encodeMap[string] + ';';</span>
+<span class="cstat-no" title="statement not covered" >				return '&amp;' + encodeMap[string] + ';';</span>
 			});
-		} else <span class="cstat-no" title="statement not covered">if (!allowUnsafeSymbols) {</span>
+		} else <span class="cstat-no" title="statement not covered" >if (!allowUnsafeSymbols) {</span>
 			// Encode `&lt;&gt;"'&amp;` using hexadecimal escapes, now that they’re not handled
 			// using named character references.
-<span class="cstat-no" title="statement not covered">			string = string.replace(regexEscape, escapeBmpSymbol);</span>
+<span class="cstat-no" title="statement not covered" >			string = string.replace(regexEscape, escapeBmpSymbol);</span>
 		}
-<span class="cstat-no" title="statement not covered">		return string</span>
+<span class="cstat-no" title="statement not covered" >		return string</span>
 			// Encode astral symbols.
-			.replace(regexAstralSymbols, <span class="fstat-no" title="function not covered">function($0) {</span>
+			.replace(regexAstralSymbols, <span class="fstat-no" title="function not covered" >function($0) {</span>
 				// https://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
-<span class="cstat-no" title="statement not covered">				var high = $0.charCodeAt(0);</span>
-<span class="cstat-no" title="statement not covered">				var low = $0.charCodeAt(1);</span>
-<span class="cstat-no" title="statement not covered">				var codePoint = (high - 0xD800) * 0x400 + low - 0xDC00 + 0x10000;</span>
-<span class="cstat-no" title="statement not covered">				return escapeCodePoint(codePoint);</span>
+<span class="cstat-no" title="statement not covered" >				var high = $0.charCodeAt(0);</span>
+<span class="cstat-no" title="statement not covered" >				var low = $0.charCodeAt(1);</span>
+<span class="cstat-no" title="statement not covered" >				var codePoint = (high - 0xD800) * 0x400 + low - 0xDC00 + 0x10000;</span>
+<span class="cstat-no" title="statement not covered" >				return escapeCodePoint(codePoint);</span>
 			})
 			// Encode any remaining BMP symbols that are not printable ASCII symbols
 			// using a hexadecimal escape.
@@ -1123,52 +1125,52 @@
 		'decimal' : false
 	};
 &nbsp;
-	var decode = <span class="fstat-no" title="function not covered">function(html, options) {</span>
-<span class="cstat-no" title="statement not covered">		options = merge(options, decode.options);</span>
-<span class="cstat-no" title="statement not covered">		var strict = options.strict;</span>
-<span class="cstat-no" title="statement not covered">		if (strict &amp;&amp; regexInvalidEntity.test(html)) {</span>
-<span class="cstat-no" title="statement not covered">			parseError('malformed character reference');</span>
+	var decode = <span class="fstat-no" title="function not covered" >function(html, options) {</span>
+<span class="cstat-no" title="statement not covered" >		options = merge(options, decode.options);</span>
+<span class="cstat-no" title="statement not covered" >		var strict = options.strict;</span>
+<span class="cstat-no" title="statement not covered" >		if (strict &amp;&amp; regexInvalidEntity.test(html)) {</span>
+<span class="cstat-no" title="statement not covered" >			parseError('malformed character reference');</span>
 		}
-<span class="cstat-no" title="statement not covered">		return html.replace(regexDecode, <span class="fstat-no" title="function not covered">function($0, $1, $2, $3, $4, $5, $6, $7) {</span></span>
-<span class="cstat-no" title="statement not covered">			var codePoint;</span>
-<span class="cstat-no" title="statement not covered">			var semicolon;</span>
-<span class="cstat-no" title="statement not covered">			var decDigits;</span>
-<span class="cstat-no" title="statement not covered">			var hexDigits;</span>
-<span class="cstat-no" title="statement not covered">			var reference;</span>
-<span class="cstat-no" title="statement not covered">			var next;</span>
-<span class="cstat-no" title="statement not covered">			if ($1) {</span>
+<span class="cstat-no" title="statement not covered" >		return html.replace(regexDecode, <span class="fstat-no" title="function not covered" >function($0, $1, $2, $3, $4, $5, $6, $7) {</span></span>
+<span class="cstat-no" title="statement not covered" >			var codePoint;</span>
+<span class="cstat-no" title="statement not covered" >			var semicolon;</span>
+<span class="cstat-no" title="statement not covered" >			var decDigits;</span>
+<span class="cstat-no" title="statement not covered" >			var hexDigits;</span>
+<span class="cstat-no" title="statement not covered" >			var reference;</span>
+<span class="cstat-no" title="statement not covered" >			var next;</span>
+<span class="cstat-no" title="statement not covered" >			if ($1) {</span>
 				// Decode decimal escapes, e.g. `&amp;#119558;`.
-<span class="cstat-no" title="statement not covered">				decDigits = $1;</span>
-<span class="cstat-no" title="statement not covered">				semicolon = $2;</span>
-<span class="cstat-no" title="statement not covered">				if (strict &amp;&amp; !semicolon) {</span>
-<span class="cstat-no" title="statement not covered">					parseError('character reference was not terminated by a semicolon');</span>
+<span class="cstat-no" title="statement not covered" >				decDigits = $1;</span>
+<span class="cstat-no" title="statement not covered" >				semicolon = $2;</span>
+<span class="cstat-no" title="statement not covered" >				if (strict &amp;&amp; !semicolon) {</span>
+<span class="cstat-no" title="statement not covered" >					parseError('character reference was not terminated by a semicolon');</span>
 				}
-<span class="cstat-no" title="statement not covered">				codePoint = parseInt(decDigits, 10);</span>
-<span class="cstat-no" title="statement not covered">				return codePointToSymbol(codePoint, strict);</span>
+<span class="cstat-no" title="statement not covered" >				codePoint = parseInt(decDigits, 10);</span>
+<span class="cstat-no" title="statement not covered" >				return codePointToSymbol(codePoint, strict);</span>
 			}
-<span class="cstat-no" title="statement not covered">			if ($3) {</span>
+<span class="cstat-no" title="statement not covered" >			if ($3) {</span>
 				// Decode hexadecimal escapes, e.g. `&amp;#x1D306;`.
-<span class="cstat-no" title="statement not covered">				hexDigits = $3;</span>
-<span class="cstat-no" title="statement not covered">				semicolon = $4;</span>
-<span class="cstat-no" title="statement not covered">				if (strict &amp;&amp; !semicolon) {</span>
-<span class="cstat-no" title="statement not covered">					parseError('character reference was not terminated by a semicolon');</span>
+<span class="cstat-no" title="statement not covered" >				hexDigits = $3;</span>
+<span class="cstat-no" title="statement not covered" >				semicolon = $4;</span>
+<span class="cstat-no" title="statement not covered" >				if (strict &amp;&amp; !semicolon) {</span>
+<span class="cstat-no" title="statement not covered" >					parseError('character reference was not terminated by a semicolon');</span>
 				}
-<span class="cstat-no" title="statement not covered">				codePoint = parseInt(hexDigits, 16);</span>
-<span class="cstat-no" title="statement not covered">				return codePointToSymbol(codePoint, strict);</span>
+<span class="cstat-no" title="statement not covered" >				codePoint = parseInt(hexDigits, 16);</span>
+<span class="cstat-no" title="statement not covered" >				return codePointToSymbol(codePoint, strict);</span>
 			}
-<span class="cstat-no" title="statement not covered">			if ($5) {</span>
+<span class="cstat-no" title="statement not covered" >			if ($5) {</span>
 				// Decode named character references with trailing `;`, e.g. `&amp;copy;`.
-<span class="cstat-no" title="statement not covered">				reference = $5;</span>
-<span class="cstat-no" title="statement not covered">				if (has(decodeMap, reference)) {</span>
-<span class="cstat-no" title="statement not covered">					return decodeMap[reference];</span>
+<span class="cstat-no" title="statement not covered" >				reference = $5;</span>
+<span class="cstat-no" title="statement not covered" >				if (has(decodeMap, reference)) {</span>
+<span class="cstat-no" title="statement not covered" >					return decodeMap[reference];</span>
 				} else {
 					// Ambiguous ampersand. https://mths.be/notes/ambiguous-ampersands
-<span class="cstat-no" title="statement not covered">					if (strict) {</span>
-<span class="cstat-no" title="statement not covered">						parseError(</span>
+<span class="cstat-no" title="statement not covered" >					if (strict) {</span>
+<span class="cstat-no" title="statement not covered" >						parseError(</span>
 							'named character reference was not terminated by a semicolon'
 						);
 					}
-<span class="cstat-no" title="statement not covered">					return $0;</span>
+<span class="cstat-no" title="statement not covered" >					return $0;</span>
 				}
 			}
 			// If we’re still here, it’s a legacy reference for sure. No need for an
@@ -1176,21 +1178,21 @@
 			// Decode named character references without trailing `;`, e.g. `&amp;amp`
 			// This is only a parse error if it gets converted to `&amp;`, or if it is
 			// followed by `=` in an attribute context.
-<span class="cstat-no" title="statement not covered">			reference = $6;</span>
-<span class="cstat-no" title="statement not covered">			next = $7;</span>
-<span class="cstat-no" title="statement not covered">			if (next &amp;&amp; options.isAttributeValue) {</span>
-<span class="cstat-no" title="statement not covered">				if (strict &amp;&amp; next == '=') {</span>
-<span class="cstat-no" title="statement not covered">					parseError('`&amp;` did not start a character reference');</span>
+<span class="cstat-no" title="statement not covered" >			reference = $6;</span>
+<span class="cstat-no" title="statement not covered" >			next = $7;</span>
+<span class="cstat-no" title="statement not covered" >			if (next &amp;&amp; options.isAttributeValue) {</span>
+<span class="cstat-no" title="statement not covered" >				if (strict &amp;&amp; next == '=') {</span>
+<span class="cstat-no" title="statement not covered" >					parseError('`&amp;` did not start a character reference');</span>
 				}
-<span class="cstat-no" title="statement not covered">				return $0;</span>
+<span class="cstat-no" title="statement not covered" >				return $0;</span>
 			} else {
-<span class="cstat-no" title="statement not covered">				if (strict) {</span>
-<span class="cstat-no" title="statement not covered">					parseError(</span>
+<span class="cstat-no" title="statement not covered" >				if (strict) {</span>
+<span class="cstat-no" title="statement not covered" >					parseError(</span>
 						'named character reference was not terminated by a semicolon'
 					);
 				}
 				// Note: there is no need to check `has(decodeMapLegacy, reference)`.
-<span class="cstat-no" title="statement not covered">				return decodeMapLegacy[reference] + (next || '');</span>
+<span class="cstat-no" title="statement not covered" >				return decodeMapLegacy[reference] + (next || '');</span>
 			}
 		});
 	};
@@ -1200,10 +1202,10 @@
 		'strict': false
 	};
 &nbsp;
-	var escape = <span class="fstat-no" title="function not covered">function(string) {</span>
-<span class="cstat-no" title="statement not covered">		return string.replace(regexEscape, <span class="fstat-no" title="function not covered">function($0) {</span></span>
+	var escape = <span class="fstat-no" title="function not covered" >function(string) {</span>
+<span class="cstat-no" title="statement not covered" >		return string.replace(regexEscape, <span class="fstat-no" title="function not covered" >function($0) {</span></span>
 			// Note: there is no need to check `has(escapeMap, $0)` here.
-<span class="cstat-no" title="statement not covered">			return escapeMap[$0];</span>
+<span class="cstat-no" title="statement not covered" >			return escapeMap[$0];</span>
 		});
 	};
 &nbsp;
@@ -1219,34 +1221,33 @@
 &nbsp;
 	// Some AMD build optimizers, like r.js, check for specific condition patterns
 	// like the following:
-	<span class="missing-if-branch" title="if path not taken">I</span>if (
+	<span class="missing-if-branch" title="if path not taken" >I</span>if (
 		typeof define == 'function' &amp;&amp;
-<span class="branch-1 cbranch-no" title="branch not covered">		typeof define.amd == 'object' </span>&amp;&amp;
-<span class="branch-2 cbranch-no" title="branch not covered">		define.amd</span>
+<span class="branch-1 cbranch-no" title="branch not covered" >		typeof define.amd == 'object' </span>&amp;&amp;
+<span class="branch-2 cbranch-no" title="branch not covered" >		define.amd</span>
 	) {
-<span class="cstat-no" title="statement not covered">		define(<span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">			return he;</span>
+<span class="cstat-no" title="statement not covered" >		define(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >			return he;</span>
 		});
-	}	else <span class="missing-if-branch" title="else path not taken">E</span>if (freeExports &amp;&amp; !freeExports.nodeType) {
-		<span class="missing-if-branch" title="else path not taken">E</span>if (freeModule) { // in Node.js, io.js, or RingoJS v0.8.0+
+	}	else <span class="missing-if-branch" title="else path not taken" >E</span>if (freeExports &amp;&amp; !freeExports.nodeType) {
+		<span class="missing-if-branch" title="else path not taken" >E</span>if (freeModule) { // in Node.js, io.js, or RingoJS v0.8.0+
 			freeModule.exports = he;
 		} else { // in Narwhal or RingoJS v0.7.0-
-<span class="cstat-no" title="statement not covered">			for (var key in he) {</span>
-<span class="cstat-no" title="statement not covered">				has(he, key) &amp;&amp; (freeExports[key] = he[key]);</span>
+<span class="cstat-no" title="statement not covered" >			for (var key in he) {</span>
+<span class="cstat-no" title="statement not covered" >				has(he, key) &amp;&amp; (freeExports[key] = he[key]);</span>
 			}
 		}
 	} else { // in Rhino or a web browser
-<span class="cstat-no" title="statement not covered">		root.he = he;</span>
+<span class="cstat-no" title="statement not covered" >		root.he = he;</span>
 	}
 &nbsp;
 }(this));
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 19:30:16 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 20:47:42 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>
